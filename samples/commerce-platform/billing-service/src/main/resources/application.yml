@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: billing-service
+  datasource:
+    url: jdbc:postgresql://pg-billing:5432/billing_db
+    username: billing
+server:
+  port: 8090
+
+# downstream
+payment:
+  service:
+    url: http://payment-service:9000
+user:
+  service:
+    url: http://user-service:3001

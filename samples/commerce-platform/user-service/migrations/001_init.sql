@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS users (
+  id SERIAL PRIMARY KEY,
+  email TEXT UNIQUE NOT NULL,
+  created_at TIMESTAMP DEFAULT now()
+);
+CREATE TABLE IF NOT EXISTS accounts ( id SERIAL PRIMARY KEY, user_id INT REFERENCES users(id) );
+CREATE TABLE IF NOT EXISTS addresses ( id SERIAL PRIMARY KEY, user_id INT, line1 TEXT );
+CREATE TABLE IF NOT EXISTS entitlements ( id SERIAL PRIMARY KEY, account_id INT, plan TEXT );

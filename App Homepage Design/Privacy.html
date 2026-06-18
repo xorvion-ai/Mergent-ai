@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy · Mergent</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav scrolled">
+  <div class="wrap nav-inner">
+    <a class="logo" href="Homepage.html"><span class="logo-mark" data-logo></span><span class="logo-word">Merg<b>ent</b></span></a>
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="Homepage.html">← Home</a>
+      <a class="btn btn-ghost" href="Terms.html">Terms</a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2 12h2M20 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="legal-head">
+    <span class="eyebrow">Legal</span>
+    <h1 style="margin-top:16px;">Privacy Policy</h1>
+    <div class="updated">Last updated: June 14, 2026 · A Xorvion product</div>
+  </div>
+
+  <div class="legal-layout">
+    <nav class="legal-toc">
+      <h5>On this page</h5>
+      <a href="#collect">1. What we collect</a>
+      <a href="#use">2. How we use it</a>
+      <a href="#code">3. Your code &amp; repos</a>
+      <a href="#llm">4. AI processing</a>
+      <a href="#cookies">5. Cookies</a>
+      <a href="#retention">6. Retention</a>
+      <a href="#rights">7. Your rights</a>
+      <a href="#security">8. Security</a>
+      <a href="#changes">9. Changes</a>
+      <a href="#contact">10. Contact</a>
+    </nav>
+
+    <div class="legal-body">
+      <section id="collect">
+        <h2><span class="num">01</span> What we collect</h2>
+        <p>We aim to collect as little as possible. Depending on how you use Mergent, that may include:</p>
+        <ul>
+          <li><strong>Account data</strong> — your email and the sign-in provider you choose (Google, GitHub, magic link).</li>
+          <li><strong>Submitted content</strong> — repository URLs, uploaded archives, and API specifications you provide for analysis.</li>
+          <li><strong>Usage data</strong> — basic analytics such as which features you use and whether an analysis completed.</li>
+        </ul>
+      </section>
+
+      <section id="use">
+        <h2><span class="num">02</span> How we use it</h2>
+        <p>We use your information solely to operate the Service: to authenticate you, run analyses, generate reports, and improve reliability. We do not sell your data.</p>
+      </section>
+
+      <section id="code">
+        <h2><span class="num">03</span> Your code &amp; repositories</h2>
+        <div class="callout"><p><strong>We don't keep your source code.</strong> Repositories are cloned or extracted into ephemeral, per-session workspaces, parsed for structured facts, and discarded after the analysis run completes.</p></div>
+        <p>The parsing step happens server-side. From it we derive a compact set of facts — service names, endpoints, dependency edges, table names, configuration values — which is what powers the rest of the pipeline.</p>
+      </section>
+
+      <section id="llm">
+        <h2><span class="num">04</span> AI processing</h2>
+        <p>Mergent uses a large language model (Google Gemini by default) for the reasoning steps of its agents. By design, <strong>only the extracted facts</strong> — never raw repository dumps — are sent to the model provider.</p>
+        <p>Model providers process this data under their own terms. We send the minimum necessary to produce your analysis.</p>
+      </section>
+
+      <section id="cookies">
+        <h2><span class="num">05</span> Cookies &amp; local storage</h2>
+        <p>We use essential cookies and browser local storage to keep you signed in and to remember preferences such as your light/dark theme. We do not use third-party advertising trackers.</p>
+      </section>
+
+      <section id="retention">
+        <h2><span class="num">06</span> Data retention</h2>
+        <ul>
+          <li><strong>Submitted code:</strong> deleted when the analysis session ends.</li>
+          <li><strong>Generated reports:</strong> retained only if you choose to save them; otherwise per-session.</li>
+          <li><strong>Account data:</strong> retained until you delete your account.</li>
+        </ul>
+      </section>
+
+      <section id="rights">
+        <h2><span class="num">07</span> Your rights</h2>
+        <p>You may request access to, correction of, or deletion of your personal data at any time. To do so, contact us and we'll respond within a reasonable period.</p>
+      </section>
+
+      <section id="security">
+        <h2><span class="num">08</span> Security</h2>
+        <p>We transmit data over encrypted connections and store secrets such as API keys only in environment variables — never in code or repositories. No system is perfectly secure, but we follow sensible engineering practice to protect your data.</p>
+      </section>
+
+      <section id="changes">
+        <h2><span class="num">09</span> Changes to this policy</h2>
+        <p>We may update this policy. Material changes will be reflected in the “Last updated” date above.</p>
+      </section>
+
+      <section id="contact">
+        <h2><span class="num">10</span> Contact</h2>
+        <p>Privacy questions? Reach us at <a class="inl" href="Homepage.html#contact">hello@mergent.dev</a>.</p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-bottom" style="border-top:none;margin-top:0;padding-top:0;">
+      <span class="credit">© 2026 Mergent. All rights reserved.</span>
+      <span class="credit xorvion"><span class="x"></span> a <b>Xorvion</b> product</span>
+    </div>
+  </div>
+</footer>
+
+<script src="mergent.js"></script>
+</body>
+</html>
